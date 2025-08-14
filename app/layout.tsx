@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${epilogue.variable} font-epilogue antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
