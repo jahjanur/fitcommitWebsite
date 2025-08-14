@@ -184,13 +184,13 @@ export function Navigation() {
             >
               <div className="px-6 py-8">
                 {/* Menu Items */}
-                <div className="space-y-2">
+                <div>
                   {navItems.map((item, index) => (
                     <motion.button
                       key={item.href}
                       onClick={() => handleNavClick(item)}
                       className={`group block w-full text-left py-4 px-6 text-text hover:text-accent rounded-2xl transition-all duration-300 font-medium text-lg relative overflow-hidden ${
-                        item.label === 'Features' ? 'mt-11' : ''
+                        item.label === 'Features' ? 'mt-16' : index === 0 ? '' : 'mt-2'
                       }`}
                       initial={{ opacity: 0, x: -30 }}
                       animate={{ opacity: 1, x: 0 }}
