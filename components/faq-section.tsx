@@ -162,7 +162,7 @@ export function FAQSection() {
                   {/* Store Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <motion.a
-                      href="https://testflight.apple.com/join/7JEmuzQx"
+                      href="https://apps.apple.com/ca/app/ai-body-fat-by-fitcommit/id6748652177"
                       className="inline-flex items-center justify-center"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -180,7 +180,7 @@ export function FAQSection() {
                     </motion.a>
                     
                     <motion.a
-                      href="https://testflight.apple.com/join/7JEmuzQx"
+                      href="https://apps.apple.com/ca/app/ai-body-fat-by-fitcommit/id6748652177"
                       className="inline-flex items-center justify-center"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}

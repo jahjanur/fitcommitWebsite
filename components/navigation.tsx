@@ -13,7 +13,7 @@ const navItems = [
   { href: '#results', label: 'Results' },
   { href: '#team', label: 'Team' },
   { href: '#faq', label: 'FAQ' },
-  { href: 'https://testflight.apple.com/join/7JEmuzQx', label: 'Download', isExternal: true },
+  { href: 'https://apps.apple.com/ca/app/ai-body-fat-by-fitcommit/id6748652177', label: 'Download', isExternal: true },
 ]
 
 export function Navigation() {
@@ -236,7 +236,7 @@ export function Navigation() {
                     </p>
                     <div className="flex justify-center space-x-3">
                       <motion.a
-                        href="https://testflight.apple.com/join/7JEmuzQx"
+                        href="https://apps.apple.com/ca/app/ai-body-fat-by-fitcommit/id6748652177"
                         className="px-4 py-2 bg-accent/10 text-accent rounded-xl text-sm font-medium hover:bg-accent/20 transition-colors duration-200"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
