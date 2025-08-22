@@ -16,6 +16,25 @@ export default function HomePage() {
   
   return (
     <main className="min-h-screen">
+      {/* SEO: JSON-LD structured data for Organization */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'FitCommit',
+            url: 'https://fitcommit.ai',
+            logo: 'https://fitcommit.ai/images/FitCommitLogoWebsite.svg',
+            sameAs: [
+              'https://instagram.com/fitcommit',
+              'https://twitter.com/fitcommit',
+              'https://linkedin.com/company/fitcommit',
+              'https://youtube.com/@fitcommit'
+            ]
+          })
+        }}
+      />
       <Navigation />
       <HeroSection />
       <FeaturesSection />
