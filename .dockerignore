@@ -1,0 +1,15 @@
+# Node
+node_modules
+npm-debug.log
+.next/cache
+
+# Git
+.git
+.gitignore
+
+# OS
+.DS_Store
+
+# Editor
+.vscode
+.idea
