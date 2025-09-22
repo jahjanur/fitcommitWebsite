@@ -449,9 +449,9 @@ export function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            <div className="relative w-full h-[700px] flex items-center justify-center">
+            <div className="relative w-full h-[700px] overflow-hidden flex items-center justify-center">
               <motion.div
-                className="relative z-20"
+                className="relative z-20 h-full w-full"
                 whileHover={{ scale: 1.02 }}
                 animate={isReducedMotion ? {} : { 
                   y: [0, -10, 0],
@@ -466,9 +466,9 @@ export function HeroSection() {
                 <Image
                   src="/images/HeroSectionImage.webp"
                   alt="FitCommit app interface showing body composition analysis"
-                  width={1000}
-                  height={800}
-                  className="w-auto h-auto max-w-none object-contain"
+                  fill
+                  sizes="(min-width:1024px) 50vw, 100vw"
+                  className="object-contain select-none pointer-events-none"
                   priority
                 />
               </motion.div>
@@ -483,7 +483,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
         >
-          <div className="flex justify-center">
+          <div className="relative w-full h-[60vh] sm:h-[70vh]">
             <motion.div
               className="relative z-20"
               whileHover={{ scale: 1.02 }}
@@ -499,9 +499,9 @@ export function HeroSection() {
               <Image
                 src="/images/HeroSectionImage.webp"
                 alt="FitCommit app interface showing body composition analysis"
-                width={2000}
-                height={2400}
-                className="w-auto h-auto max-w-[120vw] object-contain"
+                fill
+                sizes="100vw"
+                className="object-contain select-none pointer-events-none"
                 priority
               />
             </motion.div>
