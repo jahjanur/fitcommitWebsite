@@ -320,14 +320,16 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/images/AppStoreIcon.png"
-                  alt="Download on the App Store"
-                  width={140}
-                  height={47}
-                  className="w-auto h-auto"
-                  priority
-                />
+                <div className="relative w-[140px] h-[47px] shrink-0 store-badge">
+                  <Image
+                    src="/images/AppStoreIcon.png"
+                    alt="Download on the App Store"
+                    fill
+                    sizes="140px"
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               </motion.a>
               
               <motion.a
@@ -338,14 +340,16 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/images/GooglePlayIcon.png"
-                  alt="Get it on Google Play"
-                  width={140}
-                  height={47}
-                  className="w-auto h-auto"
-                  priority
-                />
+                <div className="relative w-[140px] h-[47px] shrink-0 store-badge">
+                  <Image
+                    src="/images/GooglePlayIcon.png"
+                    alt="Get it on Google Play"
+                    fill
+                    sizes="140px"
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               </motion.a>
             </motion.div>
 
